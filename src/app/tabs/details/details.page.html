@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" style="margin-top: 20px;">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="margin-top: 20px;">{{product.name}}</ion-title>
+  </ion-toolbar>
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let image of product.images">
+      <img [src]="image">
+    </ion-slide>
+  </ion-slides>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div>
+    <p class="title">Details</p>
+    <p style="font-size: 14px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ipsa vel libero ex, nostrum laboriosam fugit itaque porro. Excepturi ipsa veritatis, aut facere sint minus explicabo ut at doloremque repellendus.</p>
+  </div>
+  <div >
+    <ion-item lines="none" class="details">
+      <p class="title" slot="start" >Prix</p>
+      <span slot="end">{{product.price | currency}}</span>
+    </ion-item>
+    <ion-item lines="none" class="details">
+      <p class="title" slot="start">En vente sur</p>
+      <span slot="end">{{product.plateforme}}</span>
+    </ion-item>
+    <ion-item lines="none" class="details">
+      <p class="title" slot="start">Mode de paiement</p>
+      <span slot="end">Visa</span>
+    </ion-item>
+    <ion-item lines="none" class="details">
+      <p class="title" slot="start">Voir un essai</p>
+      <ion-icon name="logo-youtube" slot="end" color="danger"
+      (click)="watchVideo()"></ion-icon>
+    </ion-item>
+    <ion-button expand="block" size="large" href="https://www.amazon.com/Microsoft-Surface-Laptop-Touch-Screen-Memory/dp/B07YNK81F8/ref=sr_1_1?keywords=Surface+Laptop+3&qid=1576507496&s=electronics&sr=1-1">Acheter</ion-button>
+  
+  </div>
+
+</ion-content>

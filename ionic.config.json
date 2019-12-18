@@ -1,5 +1,7 @@
 {
   "name": "wyccom",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

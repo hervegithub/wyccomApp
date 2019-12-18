@@ -1,0 +1,95 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>produits</ion-title>
+  </ion-toolbar>
+  <ion-row>
+    <ion-col col-4><ion-button expand="block" fill="outline" color="primary">Prix ascendant
+      <ion-icon name="arrow-up" color="primary"></ion-icon>
+    </ion-button></ion-col>
+    <ion-col col-4><ion-button expand="block" fill="clear" color="primary">Filtre
+      <ion-icon name="arrow-up" color="primary"></ion-icon>
+    </ion-button></ion-col>
+    <ion-col col-4><ion-button expand="block" fill="clear" color="primary">
+      <ion-icon name="options" color="primary"></ion-icon>
+    </ion-button></ion-col>
+  </ion-row>
+  
+</ion-header>
+
+<ion-content>
+  <p style="margin-top: 20px;">Tous nos articles <span style="color: #6969fc; margin-left: 40%;">Voir plus</span></p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <ion-card (click)="details()">
+          <img class="image" src="../../../assets/computer.png">
+          <p>Surface laptop 3 <br>
+            <span style="color: #6969fc;">$30</span></p>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img class="image" src="../../../assets/1.png">
+          <p>Surface laptop 3 <br>
+            <span style="color: #6969fc;">$30</span></p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-6>
+        <ion-card>
+          <img class="image" src="../../../assets/2.png">
+          <p>Surface laptop 3 <br>
+            <span style="color: #6969fc;">$30</span></p>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img class="image" src="../../../assets/3.png">
+          <p>Surface laptop 3 <br>
+            <span style="color: #6969fc;">$30</span></p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-6>
+        <ion-card>
+          <img class="image" src="../../../assets/computer.png">
+          <p>Surface laptop 3 <br>
+            <span style="color: #6969fc;">$30</span></p>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img class="image" src="../../../assets/2.png">
+          <p>Surface laptop 3 <br>
+            <span style="color: #6969fc;">$30</span></p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-6>
+        <ion-card>
+          <img class="image" src="../../../assets/1.png">
+          <p>Surface laptop 3 <br>
+            <span style="color: #6969fc;">$30</span></p>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img class="image" src="../../../assets/2.png">
+          <p>Surface laptop 3 <br>
+            <span style="color: #6969fc;">$30</span></p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

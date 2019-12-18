@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Matériels</ion-title>
+  </ion-toolbar>
+  <ion-segment [(ngModel)]="segment">
+    <ion-segment-button value="gameurs">
+      <ion-label>Gameurs</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="youtubers">
+      <ion-label>Youtubeurs</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'gameurs'">
+      <ion-item (click)="gotoproductpage()" lines="none"  *ngFor="let cat of Categories" class="item">
+        <p>{{cat.name}}</p>
+      </ion-item>
+    </div>
+    <div *ngSwitchCase="'youtubers'">
+      <ion-item (click)="gotoproductpage()" lines="none"  *ngFor="let cat of Categories" class="item">
+        <p>{{cat.name}}</p>
+      </ion-item>
+    </div>
+  </div>
+</ion-content>

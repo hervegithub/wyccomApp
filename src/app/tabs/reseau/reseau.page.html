@@ -1,0 +1,195 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Chaines</ion-title>
+  </ion-toolbar>
+  <ion-segment [(ngModel)]="segment">
+    <ion-segment-button value="gameurs">
+      <ion-icon name="logo-game-controller-b"></ion-icon>
+      <ion-label>Gameurs</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="youtubers">
+      <ion-icon name="logo-youtube"></ion-icon>
+      <ion-label>Youtubeurs</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="streameur">
+      <ion-icon name="videocam"></ion-icon>
+      <ion-label>Streameurs</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+  
+<ion-content>
+ <div [ngSwitch]="segment" >
+   <div *ngSwitchCase="'gameurs'">
+     <ion-item lines="none" (click)="voirTout()">
+      <p slot="start">Recommander </p>
+      <ion-icon slot="end" name="arrow-dropright"></ion-icon>
+     </ion-item>
+     <ion-slides  [options]="slideOpts">
+      <ion-slide style="display: block;">
+        <img src="../../../assets/gamer1.jpg">
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer2.jpg" >
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer3.jpg">
+        <div style="margin-top: 20px; margin-left: 50px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-item lines="none" (click)="voirTout()">
+      <p slot="start">Autres gameurs </p>
+      <ion-icon slot="end" name="arrow-dropright"></ion-icon>
+     </ion-item>
+     <ion-slides  [options]="slideOpts">
+      <ion-slide style="display: block;">
+        <img src="../../../assets/gamer1.jpg">
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer2.jpg" >
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer3.jpg">
+        <div style="margin-top: 20px; margin-left: 50px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+    </ion-slides>
+   </div>
+   <div *ngSwitchCase="'youtubers'">
+    <ion-item lines="none" (click)="voirTout()">
+      <p slot="start">Recommander </p>
+      <ion-icon slot="end" name="arrow-dropright"></ion-icon>
+     </ion-item>
+     <ion-slides  [options]="slideOpts">
+      <ion-slide style="display: block;">
+        <img src="../../../assets/gamer1.jpg">
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer2.jpg" >
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer3.jpg">
+        <div style="margin-top: 20px; margin-left: 50px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-item lines="none" (click)="voirTout()">
+      <p slot="start">Autres youtubeurs </p>
+      <ion-icon slot="end" name="arrow-dropright"></ion-icon>
+     </ion-item>
+     <ion-slides  [options]="slideOpts">
+      <ion-slide style="display: block;">
+        <img src="../../../assets/gamer1.jpg">
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer2.jpg" >
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer3.jpg">
+        <div style="margin-top: 20px; margin-left: 50px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+    </ion-slides>
+   </div>
+   <div *ngSwitchCase="'streameur'">
+    <ion-item lines="none" (click)="voirTout()">
+      <p slot="start">Recommander </p>
+      <ion-icon slot="end" name="arrow-dropright"></ion-icon>
+     </ion-item>
+     <ion-slides  [options]="slideOpts">
+      <ion-slide style="display: block;">
+        <img src="../../../assets/gamer1.jpg">
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer2.jpg" >
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer3.jpg">
+        <div style="margin-top: 20px; margin-left: 50px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-item lines="none" (click)="voirTout()">
+      <p slot="start">Autres streameur </p>
+      <ion-icon slot="end" name="arrow-dropright"></ion-icon>
+     </ion-item>
+     <ion-slides  [options]="slideOpts">
+      <ion-slide style="display: block;">
+        <img src="../../../assets/gamer1.jpg">
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer2.jpg" >
+        <div style="margin-top: 20px; margin-left: 70px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/gamer3.jpg">
+        <div style="margin-top: 20px; margin-left: 50px;">
+          <h4>Test PES 2019 in live</h4>
+          <h5>2.5M vue | 3 mois</h5>
+        </div>
+      </ion-slide>
+    </ion-slides>
+   </div>
+ </div>
+</ion-content>
